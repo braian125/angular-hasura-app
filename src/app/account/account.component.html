@@ -1,0 +1,28 @@
+{{account | json}}
+<div class="uk-flex uk-flex-center">
+    <br />
+    <form >
+        <div class="uk-margin">
+            <label class="uk-form-label" for="name">First Name</label>
+            <div class="uk-form-controls">
+                <input type="text" name="name" [(ngModel)]="account.name" class="uk-input uk-form-width-large" placeholder="First Name">
+            </div>
+        </div>
+
+        <div class="uk-margin">
+            <label class="uk-form-label" for="last_name">Family Name</label>
+            <div class="uk-form-controls">
+                <input type="text" name="last_name" [(ngModel)]="account.last_name" class="uk-input uk-form-width-large" placeholder="Family Name">
+            </div>
+        </div>
+
+        <div class="uk-margin">
+            <label class="uk-form-label" for="phone">Phone</label>
+            <div class="uk-form-controls">
+                <input type="text" name="phone" [(ngModel)]="account.phone" class="uk-input uk-form-width-large" placeholder="Phone">
+            </div>
+        </div>
+
+        <button type="submit" class="uk-button uk-button-secondary uk-width-1-1">Guardar</button>
+    </form>
+</div>
